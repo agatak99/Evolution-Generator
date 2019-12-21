@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
-public class GrassTest
+public class PlantTest
 {
     private Plant plant1 =new Plant(new Vector2d(2,5));
     private Plant plant2 =new Plant(new Vector2d(0,-3));

@@ -11,7 +11,7 @@ public class GameAnimalTest {
   private Simulation simulation =new Simulation(20, 10, 0.4, 2 , 1, 4, 5 );
 
     @RepeatedTest(value = 10, name="Test {displayName} - {currentRepetition} / {totalRepetitions}")
-    void testMove(){
+    void testMoveAndTurn(){
 
         Vector2d position;
         Vector2d expectedPosition;
@@ -90,4 +90,5 @@ public class GameAnimalTest {
         animal.move();
         assertEquals(animal.toString(), " \ud83d\udc80");
     }
+
 }

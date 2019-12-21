@@ -76,7 +76,7 @@ public class Visualization {
         if (timer == null) {
             timer = new Timer(600, timerListener);
             timer.start();
-            startStopButton.setText("Stop");
+            startStopButton.setText("Pauza");
         }
     }
 

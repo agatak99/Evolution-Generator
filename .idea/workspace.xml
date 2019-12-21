@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fbfc035-9c53-4741-823b-55ef247c49de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/agh/po/MapElements/GameAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/MapElements/GameAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/Simulation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/World.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/MapElements/GameAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/MapElements/GameAnimal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/MapElements/Plant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/MapElements/Plant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/lab1/GameAnimalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab1/GameAnimalTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/lab1/GameAreaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab1/GameAreaTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/lab1/GrassTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab1/GrassTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/GameAnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/GameAnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/GrassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/PlantTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,19 +98,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameAnimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GenesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameAnimalTest" />
+      <option name="MAIN_CLASS_NAME" value="GenesTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameAreaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameAreaTest" />
+      <option name="MAIN_CLASS_NAME" value="PlantTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -116,30 +125,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SimulationTest.testPlaceFirstAnimals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Vector2dTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SimulationTest" />
-      <option name="METHOD_NAME" value="testPlaceFirstAnimals" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="Vector2dTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.World" />
+      <item itemvalue="JUnit.GenesTest" />
+      <item itemvalue="JUnit.PlantTest" />
       <item itemvalue="JUnit.SimulationTest" />
-      <item itemvalue="JUnit.GameAreaTest" />
-      <item itemvalue="JUnit.GameAnimalTest" />
-      <item itemvalue="JUnit.SimulationTest.testPlaceFirstAnimals" />
+      <item itemvalue="JUnit.Vector2dTest" />
+      <item itemvalue="Application.World" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.World" />
-        <item itemvalue="JUnit.SimulationTest.testPlaceFirstAnimals" />
-        <item itemvalue="JUnit.GameAnimalTest" />
-        <item itemvalue="JUnit.GameAreaTest" />
+        <item itemvalue="JUnit.Vector2dTest" />
         <item itemvalue="JUnit.SimulationTest" />
+        <item itemvalue="JUnit.PlantTest" />
+        <item itemvalue="JUnit.GenesTest" />
       </list>
     </recent_temporary>
   </component>

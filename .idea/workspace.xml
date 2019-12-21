@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fbfc035-9c53-4741-823b-55ef247c49de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/GameArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/GameArea.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/IWorldMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/IWorldMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/Simulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/MapElements/GameAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/MapElements/GameAnimal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Properties/Genes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Properties/Genes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Utilities/Visualization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Utilities/Visualization.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab1/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/parameters.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/lab1/GameAnimalTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab1/GameAnimalTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/lab1/GameAreaTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab1/GameAreaTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/lab1/SimulationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab1/SimulationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Map/GameArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Map/GameArea.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Map/IWorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Map/IWorldMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Map/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Map/Simulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Map/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Map/World.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/po/MapElements/GameAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/MapElements/GameAnimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/po/MapElements/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/MapElements/Plant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Properties/Genes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Properties/Genes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Utilities/JSONReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Utilities/JSONReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Utilities/MapVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Utilities/MapVisualizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Utilities/Visualization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Utilities/Visualization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/parameters.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/GameAnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/GameAnimalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/GameAreaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/GameAreaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/GrassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/GrassTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/SimulationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SimulationTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

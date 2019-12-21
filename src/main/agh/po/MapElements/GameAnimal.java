@@ -89,7 +89,6 @@ public class GameAnimal{
 
     public void addPlantEnergy(double plantEnergy)
     {
-        //tutaj czy bardziej już w GameArea
         this.energy+= plantEnergy;
     }
 
@@ -129,7 +128,7 @@ public class GameAnimal{
     }
 
     public GameDirection getDirection()
-    {//spr czy potrzebne
+    {
         return this.direction;
     }
 

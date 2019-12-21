@@ -1,4 +1,3 @@
-import agh.po.Map.GameArea;
 import agh.po.MapElements.GameAnimal;
 import agh.po.Map.Simulation;
 import agh.po.Properties.Vector2d;

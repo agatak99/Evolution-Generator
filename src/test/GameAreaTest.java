@@ -1,13 +1,10 @@
-import agh.po.Map.GameArea;
+
 import agh.po.MapElements.GameAnimal;
 import agh.po.Map.Simulation;
 import agh.po.Properties.Vector2d;
-import agh.po.Properties.GameDirection;
 import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -102,7 +99,7 @@ public class GameAreaTest {
 
     @Test
     void insideJungle(){
-        Vector2d jungleLowerLeft = simulation.map.getJungleLowerLeft();
+        Vector2d jungleLowerLeft = simulation.map.jungle_lower_left;
         Vector2d jungleUpperRight = new Vector2d(jungleLowerLeft.x+simulation.map.jungleWidth, jungleLowerLeft.y+simulation.map.jungleHeight);
         Vector2d position0=new Vector2d(jungleLowerLeft.x-1, jungleLowerLeft.y);
         Vector2d position1=new Vector2d(jungleLowerLeft.x, jungleLowerLeft.y-1);
@@ -125,8 +122,8 @@ public class GameAreaTest {
     @RepeatedTest(value = 40, name="Test {displayName} - {currentRepetition} / {totalRepetitions}")
     void testRandomlyGetPosition()
     {
-        Vector2d lowerLeft=simulation.map.getLowerLeft();
-        Vector2d upperRight=simulation.map.getUpperRight();
+        Vector2d lowerLeft=simulation.map.grassLand_lower_left;
+        Vector2d upperRight=simulation.map.grassLand_upper_right;
         Vector2d position=simulation.map.randomlyGetPosition();
         assertTrue(position.precedes(upperRight) && position.follows(lowerLeft));
     }

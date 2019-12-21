@@ -9,13 +9,13 @@ import java.util.concurrent.ThreadLocalRandom;
 public class GameArea implements IWorldMap, IPositionChangeObserver
 {
 
-    public final int width;
-    public final int height;
+    private final int width;
+    private final int height;
     public final int jungleWidth;
     public final int jungleHeight;
-    private final Vector2d grassLand_lower_left;
-    private final Vector2d grassLand_upper_right;
-    private final Vector2d jungle_lower_left; //todo:zamienić na public final
+    public final Vector2d grassLand_lower_left;
+    public final Vector2d grassLand_upper_right;
+    public final Vector2d jungle_lower_left;
 
 
     List<GameAnimal> animals = new ArrayList<>();
@@ -43,9 +43,9 @@ public class GameArea implements IWorldMap, IPositionChangeObserver
         }
 
 
-        for(int j=this.jungle_lower_left.x; j<=this.jungle_lower_left.x+jungleWidth; j++)
+        for(int j=this.jungle_lower_left.x; j<this.jungle_lower_left.x+jungleWidth; j++)
         {
-            for(int i=jungle_lower_left.y; i<=this.jungle_lower_left.y+jungleHeight; i++)
+            for(int i=jungle_lower_left.y; i<this.jungle_lower_left.y+jungleHeight; i++)
             {
                 emptyPositionsInGrassland.remove(new Vector2d(j,i));
                 emptyPositionsInJungle.add(new Vector2d(j,i));
@@ -146,18 +146,6 @@ public class GameArea implements IWorldMap, IPositionChangeObserver
                 animals.add((GameAnimal) element);
         }
         return animals;
-    }
-
-    public Vector2d getLowerLeft() {
-        return grassLand_lower_left;
-    }
-
-    public Vector2d getUpperRight() {
-        return grassLand_upper_right;
-    }
-
-    public Vector2d getJungleLowerLeft() {
-        return jungle_lower_left;
     }
 
     public List<GameAnimal> getGameAnimals() {return this.animals;}

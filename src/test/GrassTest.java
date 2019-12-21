@@ -1,6 +1,5 @@
 import agh.po.MapElements.Plant;
 import agh.po.Properties.Vector2d;
-import agh.po.Map.GameArea;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;

@@ -44,11 +44,13 @@ public class JSONReader {
             this.jungleRatio = (Double) jsonObject.get("jungleRatio");
             this.startNumberOfAnimals = Math.toIntExact((Long) jsonObject.get("startNumberOfAnimals"));
 
-        }   catch (IOException | ParseException | NullPointerException ex){
+        }   catch (IOException | ParseException | NullPointerException | IllegalArgumentException ex){
             if(ex instanceof FileNotFoundException) System.out.println("File not found!");
             if(ex instanceof ParseException) System.out.println("ParseException");
+            if(ex instanceof IllegalArgumentException) System.out.println(ex.toString());
+            }
         }
-    }
+
 
     public int getWidth() {
         return width;

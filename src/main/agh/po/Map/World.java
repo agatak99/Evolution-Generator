@@ -1,6 +1,4 @@
 package agh.po.Map;
-
-
 import agh.po.Utilities.JSONReader;
 import agh.po.Utilities.Visualization;
 
@@ -13,4 +11,3 @@ public class World {
         visualization.startAnimation();
     }
 }
-//todo:dodaj `wyjątki!!!!

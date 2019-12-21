@@ -1,4 +1,5 @@
 package agh.po.MapElements;
+
 import agh.po.Properties.Vector2d;
 
 public class Plant{

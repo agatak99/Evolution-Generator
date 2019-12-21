@@ -5,8 +5,8 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class Genes {
 
-    public static final int genesQuantity=32;
-    public static final int typeOfGenesQuantity=8;
+    private static final int genesQuantity=32;
+    private static final int typeOfGenesQuantity=8;
     private int [] genotype=new int [genesQuantity];
 
     public Genes()

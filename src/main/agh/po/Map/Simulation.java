@@ -4,7 +4,6 @@ import agh.po.MapElements.GameAnimal;
 import agh.po.MapElements.Plant;
 import agh.po.Properties.Vector2d;
 import agh.po.Utilities.MapVisualizer;
-
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -46,12 +45,12 @@ public class Simulation
 
     private String draw(){
         MapVisualizer mapVisualizer = new MapVisualizer(this.map);
-        Vector2d lower_left=map.getLowerLeft();
-        Vector2d upper_right=map.getUpperRight();
+        Vector2d lower_left=map.grassLand_lower_left;
+        Vector2d upper_right=map.grassLand_upper_right;
         return mapVisualizer.draw(lower_left, upper_right);
     }
 
-    public void placeFirstAnimals(int startNumberOfAnimals)//todo:ew zmień funkcję losującą
+    public void placeFirstAnimals(int startNumberOfAnimals)
     {
         if(!(this.map.emptyPositionsInGrassland.isEmpty() && this.map.emptyPositionsInJungle.isEmpty()))
         {
@@ -152,7 +151,7 @@ public class Simulation
             else if (plant != null &&map.animalsAtPosition(position).size()>1 ) {
 
                 List<GameAnimal> animalsWithMaxEnergy;
-                animalsWithMaxEnergy = strongestAnimals(map.animalsAtPosition(position));
+                animalsWithMaxEnergy = getStrongestAnimals(map.animalsAtPosition(position));
                 if(!animalsWithMaxEnergy.isEmpty())
                 {
                     quantity = animalsWithMaxEnergy.size();
@@ -186,7 +185,7 @@ public class Simulation
             {
                 List<GameAnimal> animalsWithMaxEnergy;
                 List<GameAnimal> animalsWithSecMaxEnergy;
-                animalsWithMaxEnergy=strongestAnimals(map.animalsAtPosition(animalPosition));
+                animalsWithMaxEnergy= getStrongestAnimals(map.animalsAtPosition(animalPosition));
 
                     if(animalsWithMaxEnergy.size()==2)
                     {
@@ -206,7 +205,7 @@ public class Simulation
                         animal1.reproduce(animal2);
                     }
                     else  if (animalsWithMaxEnergy.size()<2) {
-                        animalsWithSecMaxEnergy = secStrongestAnimals(map.animalsAtPosition(animalPosition));
+                        animalsWithSecMaxEnergy = getSecStrongestAnimals(map.animalsAtPosition(animalPosition));
                         int randomIndex;
                         if (!animalsWithSecMaxEnergy.isEmpty()) {
                             randomIndex = ThreadLocalRandom.current().nextInt(animalsWithSecMaxEnergy.size());
@@ -221,7 +220,7 @@ public class Simulation
 
     }
 
-    private void generateGrassland_Plant()
+    public void generateGrassland_Plant()
     {
         if(!this.map.emptyPositionsInGrassland.isEmpty())
         {
@@ -233,10 +232,9 @@ public class Simulation
             map.elementsMap.get(randomPlantPosition).add(newPlant);
             this.map.emptyPositionsInGrassland.remove(randomPlantPosition);
         }
-
     }
 
-    private void generateJungle_Plant()
+   public void generateJungle_Plant()
     {
         if(!this.map.emptyPositionsInJungle.isEmpty())
         {
@@ -278,7 +276,7 @@ public class Simulation
 
     }
 
-    public List<GameAnimal> strongestAnimals(List <GameAnimal> animalsAtSamePosition){//simulation
+    private List<GameAnimal> getStrongestAnimals(List <GameAnimal> animalsAtSamePosition){//simulation
 
         List<GameAnimal> strongestAnimals = new ArrayList<>();
 
@@ -302,12 +300,12 @@ public class Simulation
         return strongestAnimals;
     }
 
-    public List<GameAnimal> secStrongestAnimals(List <GameAnimal> animalsAtSamePosition) {
+    private List<GameAnimal> getSecStrongestAnimals(List <GameAnimal> animalsAtSamePosition) {
 
 
 
         List<GameAnimal> secStrongestAnimals = new ArrayList<>();
-        GameAnimal strongest = strongestAnimals(animalsAtSamePosition).get(0);
+        GameAnimal strongest = getStrongestAnimals(animalsAtSamePosition).get(0);
         animalsAtSamePosition.remove(strongest);
         double maxEnergy= animalsAtSamePosition.get(0).getEnergy();
         if(animalsAtSamePosition.size()>=1)

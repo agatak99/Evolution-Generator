@@ -1,11 +1,11 @@
 package agh.po.MapElements;
+
 import agh.po.Map.GameArea;
 import agh.po.Map.IPositionChangeObserver;
 import agh.po.Map.Simulation;
 import agh.po.Properties.GameDirection;
 import agh.po.Properties.Genes;
 import agh.po.Properties.Vector2d;
-
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -55,15 +55,13 @@ public class GameAnimal{
         this.direction=this.randomlyChangeDirection();
     }
 
-    public Vector2d move()
+    public void move()
     {
         Vector2d newPosition = position.add(this.direction.toUnitVector());
         newPosition = this.map.correctNewPosition(newPosition);
         this.changePosition(this.getPosition(), newPosition);
         this.position = newPosition;
         this.energy =reduceEnergy(Simulation.moveEnergy);
-        return newPosition;
-
     }
 
     public boolean isAbleToReproduce()

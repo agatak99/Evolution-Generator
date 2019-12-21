@@ -44,7 +44,7 @@ public class Visualization {
             }
         });
 
-        this.stopSimulationButton = new JButton("Zakończ");
+        this.stopSimulationButton = new JButton("Koniec");
         stopSimulationButton.setBounds(10, 30, 80, 20);
         stopSimulationButton.addActionListener(new ActionListener() {
             @Override
@@ -76,7 +76,7 @@ public class Visualization {
         if (timer == null) {
             timer = new Timer(600, timerListener);
             timer.start();
-            startStopButton.setText("Pauza");
+            startStopButton.setText("Stop");
         }
     }
 

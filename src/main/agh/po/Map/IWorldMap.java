@@ -14,13 +14,11 @@ public interface IWorldMap extends IPositionChangeObserver {
 
         boolean place(GameAnimal animal);
 
-        Vector2d getLowerLeft();
-
-        Vector2d getUpperRight();
-
-        Vector2d getJungleLowerLeft();
-
         boolean isInsideJungle(Vector2d position);
 
         Vector2d correctNewPosition(Vector2d newPosition);
+
+        Vector2d randomlyGetPosition();
+
+        Vector2d getBabyPosition(Vector2d parentPosition);
 }

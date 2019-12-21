@@ -4,12 +4,11 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public enum GameDirection
 {
-    //kierunki + zwracanie nowego kierunku po obrocie
-    N, NE, E, SE, S, SW, W, NW;
+    NORTH, NORTHEAST, EAST, SOUTHEAST, SOUTH, SOUTHWEST, WEST, NORTHWEST;
 
     public GameDirection rotation( int rotationDegree)
     {
-        if (rotationDegree < 0 || rotationDegree > 7) throw new IllegalArgumentException("The rotation degree  should be a number between 0 and 7");
+        if (rotationDegree < 0 || rotationDegree > 7) throw new IllegalArgumentException("The rotation degree should be a number between 0 and 7");
         int positionInEnum=this.ordinal();
         if(rotationDegree==0) return this;
         return GameDirection.values()[(positionInEnum + rotationDegree)%GameDirection.values().length];
@@ -19,21 +18,21 @@ public enum GameDirection
 
     public Vector2d toUnitVector() {
         switch (this) {
-            case N:
+            case NORTH:
                 return new Vector2d(0, 1);
-            case NE:
+            case NORTHEAST:
                 return new Vector2d(1, 1);
-            case E:
+            case EAST:
                 return new Vector2d(1, 0);
-            case SE:
+            case SOUTHEAST:
                 return new Vector2d(1, -1);
-            case S:
+            case SOUTH:
                 return new Vector2d(0, -1);
-            case SW:
+            case SOUTHWEST:
                 return new Vector2d(-1, -1);
-            case W:
+            case WEST:
                 return new Vector2d(-1, 0);
-            case NW:
+            case NORTHWEST:
                 return new Vector2d(-1, 1);
         }
 
@@ -43,28 +42,28 @@ public enum GameDirection
     @Override
     public String toString(){
         switch(this){
-            case N:
+            case NORTH:
                 return "North";
-            case NE:
+            case NORTHEAST:
                 return "Northeast";
-            case E:
+            case EAST:
                 return "East";
-            case SE:
+            case SOUTHEAST:
                 return "Southeast";
-            case S:
+            case SOUTH:
                 return "South";
-            case SW:
+            case SOUTHWEST:
                 return "Southwest";
-            case W:
+            case WEST:
                 return "West";
-            case NW:
+            case NORTHWEST:
                 return "Northwest";
             default:
                 return null;
         }
     }
 
-   public static GameDirection randomlyGetDirection() //used in case of creating new GameAnimal
+   public static GameDirection randomlyGetDirection() //used in case of creating a new GameAnimal
     {
         int i=ThreadLocalRandom.current().nextInt(8);
         return GameDirection.values()[i];

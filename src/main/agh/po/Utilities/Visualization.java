@@ -74,7 +74,7 @@ public class Visualization {
 
     public void startAnimation() {
         if (timer == null) {
-            timer = new Timer(1000, timerListener);
+            timer = new Timer(600, timerListener);
             timer.start();
             startStopButton.setText("Pauza");
         }

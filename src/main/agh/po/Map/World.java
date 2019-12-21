@@ -13,4 +13,4 @@ public class World {
         visualization.startAnimation();
     }
 }
-//todo:dodaj wyjątki!!!!
+//todo:dodaj `wyjątki!!!!

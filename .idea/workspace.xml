@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9fbfc035-9c53-4741-823b-55ef247c49de" name="Default Changelist" comment="" />
+    <list default="true" id="9fbfc035-9c53-4741-823b-55ef247c49de" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/SimulationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/GameArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/GameArea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/IWorldMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/IWorldMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/Simulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Map/Simulation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/MapElements/GameAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/MapElements/GameAnimal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/MapElements/Plant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/MapElements/Plant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Properties/GameDirection$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Properties/GameDirection$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Properties/GameDirection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Properties/GameDirection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Properties/Genes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Properties/Genes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Properties/Vector2d.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Properties/Vector2d.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Utilities/MapVisualizer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Utilities/MapVisualizer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/agh/po/Utilities/Visualization.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/agh/po/Utilities/Visualization.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/parameters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/lab1/GameDirectionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab1/GameDirectionTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/lab1/GrassTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/lab1/GrassTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Map/GameArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Map/GameArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Map/IWorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Map/IWorldMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Map/Simulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Map/Simulation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Map/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Map/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/po/MapElements/GameAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/MapElements/GameAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/po/MapElements/Plant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/MapElements/Plant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Properties/GameDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Properties/GameDirection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Properties/Genes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Properties/Genes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Properties/Vector2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Properties/Vector2d.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Utilities/MapVisualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Utilities/MapVisualizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/po/Utilities/Visualization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/po/Utilities/Visualization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/parameters.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/parameters.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/GameAnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/GameAnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/GameAreaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/GameAreaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/GameDirectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/GameDirectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/GrassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/GrassTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +53,17 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1RvnCSsMr6erMkIFLnN51fQkq1H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JSON" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -68,7 +107,7 @@
       <option name="PROGRAM_PARAMETERS" value="b r l f" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="agh.po.Utilities.*" />
+          <option name="PATTERN" value="agh.po.Map.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,60 +121,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameAreaTest.testIsOccupied" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SimulationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameAreaTest" />
-      <option name="METHOD_NAME" value="testIsOccupied" />
+      <option name="MAIN_CLASS_NAME" value="SimulationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimulationTest.testPlantComsumption" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SimulationTest" />
+      <option name="METHOD_NAME" value="testPlantComsumption" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameAreaTest.testNextDay" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SimulationTest.testReproduction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameAreaTest" />
-      <option name="METHOD_NAME" value="testNextDay" />
+      <option name="MAIN_CLASS_NAME" value="SimulationTest" />
+      <option name="METHOD_NAME" value="testReproduction" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GameAreaTest.testObjectsAt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SimulationTest.testStrongestAndSecStrongest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lab1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameAreaTest" />
-      <option name="METHOD_NAME" value="testObjectsAt" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GameAreaTest.testObjectsAt2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lab1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="GameAreaTest" />
-      <option name="METHOD_NAME" value="testObjectsAt2" />
+      <option name="MAIN_CLASS_NAME" value="SimulationTest" />
+      <option name="METHOD_NAME" value="testStrongestAndSecStrongest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.SimulationTest.testStrongestAndSecStrongest" />
       <item itemvalue="Application.World" />
-      <item itemvalue="JUnit.GameAreaTest.testObjectsAt2" />
-      <item itemvalue="JUnit.GameAreaTest.testIsOccupied" />
-      <item itemvalue="JUnit.GameAreaTest.testNextDay" />
-      <item itemvalue="JUnit.GameAreaTest.testObjectsAt" />
+      <item itemvalue="JUnit.SimulationTest.testReproduction" />
+      <item itemvalue="JUnit.SimulationTest.testPlantComsumption" />
+      <item itemvalue="JUnit.SimulationTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.World" />
-        <item itemvalue="JUnit.GameAreaTest.testObjectsAt2" />
-        <item itemvalue="JUnit.GameAreaTest.testObjectsAt" />
-        <item itemvalue="JUnit.GameAreaTest.testNextDay" />
-        <item itemvalue="JUnit.GameAreaTest.testIsOccupied" />
+        <item itemvalue="JUnit.SimulationTest" />
+        <item itemvalue="JUnit.SimulationTest.testPlantComsumption" />
+        <item itemvalue="JUnit.SimulationTest.testReproduction" />
+        <item itemvalue="JUnit.SimulationTest.testStrongestAndSecStrongest" />
       </list>
     </recent_temporary>
   </component>
@@ -152,21 +190,29 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/GameAreaTest.java</url>
-          <line>22</line>
-          <properties class="GameAreaTest">
+          <line>37</line>
+          <properties class="GameAreaTest" method="testObjectsAtAndPlace">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/agh/po/Map/GameArea.java</url>
-          <line>208</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

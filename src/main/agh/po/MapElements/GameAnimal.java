@@ -1,6 +1,7 @@
 package agh.po.MapElements;
 import agh.po.Map.GameArea;
 import agh.po.Map.IPositionChangeObserver;
+import agh.po.Map.Simulation;
 import agh.po.Properties.GameDirection;
 import agh.po.Properties.Genes;
 import agh.po.Properties.Vector2d;
@@ -9,33 +10,11 @@ import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class GameAnimal{
-    /** Każde zwierze ma określoną energię, która zmniejsza się automatycznie co dnia.
-     * Atrybut energii mówi nam ile dni zostało danemu zwierzakowi, jeżeli nie znajdzie on wcześniej pożywienia
-     * Znalezenienie i zjedzenie rośliny zwiększa poziom energii o pewną wartość
-     * Musimy monitorować pozycję zwierzęcia
-     * Musimy posiadać informację co do kierunku, w którym zwrócone jest zwierze
-     * Istnieje 8 możliwych obrotów zwierzaka, o kąt 0 st, 45 st itd..
-     * Przechowujemy 32 geny zwierzaka; 1 gen składa siię z liczby od 0 do 7. Geny świadczą o preferencjach do obrotu. Szansa wybrania danego obrotu jest proporcjonalna do liczby genów reprezentujących dany obrót
-     * Rozmnażać się mogą tylko osobniki posiadające odpowiednią ilość energii (przynajmniej połowę energii startowej), tracą przy tym 1/4 swojej energii
-     * W przypadku większej ilości zwierząt na jednej pozycji rozmnażają sie te z największą energią
-     * Nowo powstały osobnik posiada takie same atrybuty, ale inne geny; jego kierunke jest losowy, a pozycja losowa wolna, sąsiednia
-     * Zwierzęta rozmnażają się kiedy sa na tym samym polu
-     * W przypadku większej ilości zwierząt na jednym polu, roślinę zjada osobnik posiadający wiecej energii, ale jeżeli > 1 posaida taką samą maksymalną energię to rośline dzielą między sobą
-     * poczatkowa enrgia to startEnergy, energia tracona każdego dnia to moveEnergy, ilość eneergii zyskiwanej po zjedzeniu rośliny to plantEnergy*/
-
-    /**Gen-32 liczby o wartościach od 0 do 7
-     * Prawdopodobieństwo wystąpienia danego genu
-     * Dzielenie genów na 3 grupy wg losowo wybranych miejsc (losowanie dwóch pozycji) + losowanie ile grup od danego rodzica
-     * Dziecko otrzymuje 2 grupy genów od jednego rodzica i jedną grupę genów od drugiego
-     * Na końcu wartości są porządkowane
-     * Jeżeli jakikolwiek typ genu nie występuje, wybiera się losowo pozycję i zastępuje tym typem (Zwierze musi posiadać co najmniej jeden gen każdego obrotu)*/
-
-    /**narodzone zwierze ma tylko połowę sumy energii rodzica*/
 
     private Vector2d position;
     private GameDirection direction;
     private double energy;
-    private GameArea map;
+    public final GameArea map;
     private final Genes genotype;
     public final double startEnergy;
 
@@ -82,12 +61,12 @@ public class GameAnimal{
         newPosition = this.map.correctNewPosition(newPosition);
         this.changePosition(this.getPosition(), newPosition);
         this.position = newPosition;
-        this.energy =reduceEnergy(GameArea.moveEnergy);
+        this.energy =reduceEnergy(Simulation.moveEnergy);
         return newPosition;
 
     }
 
-    private boolean isAbleToReproduce()
+    public boolean isAbleToReproduce()
     {
         return this.energy>=this.startEnergy/2;
     }

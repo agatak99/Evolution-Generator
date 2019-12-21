@@ -84,8 +84,8 @@ import java.util.List;
             if (this.map.isOccupied(currentPosition)) {
                 List<Object> objects = this.map.objectsAt(currentPosition);
                 Object object = this.map.objectsAt(currentPosition).get(0);
-                int animalQuantity=this.map.countAnimalsAtPosition(currentPosition);
-                //List<GameAnimal> animalsAtPosition = this.map.chooseAnimals(objects);
+                int animalQuantity=this.map.animalsAtPosition(currentPosition).size();
+
                 if (animalQuantity>=2) result = " \uD83D\uDC3E";
                 else if (object != null) {
                     result = object.toString();

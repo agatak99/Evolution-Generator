@@ -1,5 +1,6 @@
 import agh.po.Properties.GameDirection;
 import agh.po.Properties.Vector2d;
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 import static agh.po.Properties.GameDirection.*;
@@ -10,70 +11,67 @@ public class GameDirectionTest {
 
     @Test
     void testToUnitVector() {
-        assertEquals(N.toUnitVector(), new Vector2d(0, 1));
-        assertEquals(NE.toUnitVector(), new Vector2d(1, 1));
-        assertEquals(E.toUnitVector(), new Vector2d(1, 0));
-        assertEquals(SE.toUnitVector(), new Vector2d(1, -1));
-        assertEquals(S.toUnitVector(), new Vector2d(0, -1));
-        assertEquals(SW.toUnitVector(), new Vector2d(-1, -1));
-        assertEquals(W.toUnitVector(), new Vector2d(-1, 0));
-        assertEquals(NW.toUnitVector(), new Vector2d(-1, 1));
+        assertEquals(NORTH.toUnitVector(), new Vector2d(0, 1));
+        assertEquals(NORTHEAST.toUnitVector(), new Vector2d(1, 1));
+        assertEquals(EAST.toUnitVector(), new Vector2d(1, 0));
+        assertEquals(SOUTHEAST.toUnitVector(), new Vector2d(1, -1));
+        assertEquals(SOUTH.toUnitVector(), new Vector2d(0, -1));
+        assertEquals(SOUTHWEST.toUnitVector(), new Vector2d(-1, -1));
+        assertEquals(WEST.toUnitVector(), new Vector2d(-1, 0));
+        assertEquals(NORTHWEST.toUnitVector(), new Vector2d(-1, 1));
     }
 
     @Test
     void testRotation() {
-        assertEquals(NW.rotation(0), NW);
-        assertEquals(NW.rotation(1), N);
-        assertEquals(NW.rotation(2), NE);
-        assertEquals(NW.rotation(3), E);
-        assertEquals(NW.rotation(4), SE);
-        assertEquals(NW.rotation(5), S);
-        assertEquals(NW.rotation(6), SW);
-        assertEquals(NW.rotation(7), W);
+        assertEquals(NORTHWEST.rotation(0), NORTHWEST);
+        assertEquals(NORTHWEST.rotation(1), NORTH);
+        assertEquals(NORTHWEST.rotation(2), NORTHEAST);
+        assertEquals(NORTHWEST.rotation(3), EAST);
+        assertEquals(NORTHWEST.rotation(4), SOUTHEAST);
+        assertEquals(NORTHWEST.rotation(5), SOUTH);
+        assertEquals(NORTHWEST.rotation(6), SOUTHWEST);
+        assertEquals(NORTHWEST.rotation(7), WEST);
         assertThrows(IllegalArgumentException.class, () -> {
-            NW.rotation(-1);
+            NORTHWEST.rotation(-1);
         });
         assertThrows(IllegalArgumentException.class, () -> {
-            NW.rotation(8);
+            NORTHWEST.rotation(8);
         });
-        assertEquals(E.rotation(0), E);
-        assertEquals(E.rotation(1), SE);
-        assertEquals(E.rotation(2), S);
-        assertEquals(E.rotation(3), SW);
-        assertEquals(E.rotation(4), W);
-        assertEquals(E.rotation(5), NW);
-        assertEquals(E.rotation(6), N);
-        assertEquals(E.rotation(7), NE);
+        assertEquals(EAST.rotation(0), EAST);
+        assertEquals(EAST.rotation(1), SOUTHEAST);
+        assertEquals(EAST.rotation(2), SOUTH);
+        assertEquals(EAST.rotation(3), SOUTHWEST);
+        assertEquals(EAST.rotation(4), WEST);
+        assertEquals(EAST.rotation(5), NORTHWEST);
+        assertEquals(EAST.rotation(6), NORTH);
+        assertEquals(EAST.rotation(7), NORTHEAST);
         assertThrows(IllegalArgumentException.class, () -> {
-            E.rotation(-1);
+            EAST.rotation(-1);
         });
         assertThrows(IllegalArgumentException.class, () -> {
-            E.rotation(8);
+            EAST.rotation(8);
         });
     }
 
     @Test
     void testToString()
     {
-        assertEquals(N.toString(), "North");
-        assertEquals(NE.toString(), "Northeast");
-        assertEquals(E.toString(), "East");
-        assertEquals(SE.toString(), "Southeast");
-        assertEquals(S.toString(), "South");
-        assertEquals(SW.toString(), "Southwest");
-        assertEquals(W.toString(), "West");
-        assertEquals(NW.toString(), "Northwest");
+        assertEquals(NORTH.toString(), "North");
+        assertEquals(NORTHEAST.toString(), "Northeast");
+        assertEquals(EAST.toString(), "East");
+        assertEquals(SOUTHEAST.toString(), "Southeast");
+        assertEquals(SOUTH.toString(), "South");
+        assertEquals(SOUTHWEST.toString(), "Southwest");
+        assertEquals(WEST.toString(), "West");
+        assertEquals(NORTHWEST.toString(), "Northwest");
 
     }
 
-    @Test
+    @RepeatedTest(value = 10, name="Test {displayName} - {currentRepetition} / {totalRepetitions}")
     void testRandomlyGetDirection()
     {
-        for (int i = 0; i < 10; i++)
-        {
             GameDirection direction = GameDirection.randomlyGetDirection();
-            assertTrue(direction == N || direction == NE || direction == E || direction == SE || direction == S || direction == SW || direction == W || direction == NW);
-        }
+            assertTrue(direction == NORTH || direction == NORTHEAST || direction == EAST || direction == SOUTHEAST || direction == SOUTH || direction == SOUTHWEST || direction == WEST || direction == NORTHWEST);
     }
 }
 

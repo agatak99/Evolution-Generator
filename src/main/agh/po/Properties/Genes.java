@@ -33,7 +33,7 @@ public class Genes {
 
     }
 
-    private int[] correctGenotype(int [] genotype, int [] genesOccurrences)
+    private void correctGenotype(int [] genotype, int [] genesOccurrences)
     {
         for(int i=0; i<typeOfGenesQuantity; i++)
         {
@@ -54,7 +54,6 @@ public class Genes {
             }
         }
         Arrays.sort(genotype);
-        return genotype;
     }
 
     private void generateBabyGenotype(Genes parent1Genotype, Genes parent2Genotype){

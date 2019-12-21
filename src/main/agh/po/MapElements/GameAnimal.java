@@ -93,7 +93,7 @@ public class GameAnimal{
     }
 
     private double reduceEnergy(double energy)
-    { //tutaj czy bardziej już w GameArea
+    {
         return this.energy-= energy;
     }
 
